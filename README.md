@@ -30,13 +30,11 @@ code
 
 ---
 
-# Training Sonar to detect Mines
+## Training Sonar to detect Mines
 
-**About the Dataset**
+**About the Dataset Context**
 
 The dataset is [“Sonar: Mines vs. Rocks”](http://archive.ics.uci.edu/ml/datasets/Connectionist+Bench+%28Sonar%2C+Mines+vs.+Rocks%29) by R. Gorman and T. Sejnowski and is available on the UCI machine learning repository.
-
-
 
 This dataset consists of sonar data collected to distinguish between rocks and metal objects, structures such as sea mines on the seafloor.
 
@@ -90,19 +88,14 @@ This transformation allows us to examine the energy of the received signals as a
 
 With that concepts in mind, we can finally understand the dataset!
 
-[]
-
-**Dataset Information**
-
+## Dataset Information
 - Contains 208 observations.
 - Each observation consists of 60 features in the range of 0.0 to 1.0 (pre-processed and normalized).
 - The dataset is already transformed into the frequency domain, meaning each feature represents a frequency energy.
 - The ‘target’ feature is the label associated with each record, containing the letter "R" if the object is a rock and "M" if it is a mine (metal cylinder).
 
-Note: In my interpretation, the dataset description appears ambiguous regarding whether the features are represented in the time or frequency domain. Below, we will confirm that it is indeed the latter. However, it is important to note that the input does not consist of raw sonar data or spectrograms but rather spectral envelopes. Regrettably, we lack additional information regarding the frequencies, possibly due to the historical context of the dataset originating from the Cold War era.
+Note: regrettably, we lack additional information regarding the frequencies, possibly due to the historical context of the dataset originating from the Cold War era. In my interpretation, the dataset description appears ambiguous regarding whether the features are represented in the time or frequency domain. In fact, in the code we can confirm that the latter is the case. It's important to note that the input does not consist of raw sonar data or spectrograms, but rather spectral envelopes. 
 
-Note: regrettably, we lack additional information regarding the frequencies, possibly due to the historical context of the dataset originating from the Cold War era. In my interpretation, the dataset description appears ambiguous regarding whether the features are represented in the time or frequency domain. In fact, in session [__]we will confirm that the latter is the case. It's important to note that the input does not consist of raw sonar data or spectrograms, but rather spectral envelopes. 
-
+## Code Inspirational References
 https://cainvas.ai-tech.systems/use-cases/sonar-data-recognition-app/
-
 https://www.simonwenkel.com/2018/08/23/revisiting_ml_sonar_mines_vs_rocks.html
