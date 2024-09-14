@@ -2,7 +2,7 @@
 name = "sonar"
 version = "0.1.0"
 description = ""
-authors = ["Luis Mo <kajin.mo@hotmail.com>"]
+authors = ["Luis"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
